@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vaccination Checker</title>
+</head>
+<body>
+<h1>Container Assessment</h1>
+<h1>Vaccination Status Checker</h1>
+<form method="POST" action="/check_vaccination">
+<label for="name">Enter user name </label>
+<input type="text" id="name" name="name" required>
+<br><br>
+<button type="submit">Check Status</button>
+</form>
+<br>
+{% if message %}
+<p>{{ message }}</p>
+{% endif %}
+</body>
+</html>
